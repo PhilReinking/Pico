@@ -13,6 +13,7 @@ production stylesheet in assets/built/screen.css using: gulp dev
 @import "components/global.css";
 @import "components/forms.css";
 @import "components/buttons.css";
+@import "components/cms.css";
 
 /* Ghost components */
 @import "ghost/header.css";
@@ -82,7 +83,7 @@ html,
     align-items: flex-start;
 }
 
-.pico-sitehead > img {
+.pico-sitehead>img {
     flex-shrink: 0;
     width: 140px;
     margin-right: 20px;
@@ -107,7 +108,7 @@ html,
     margin: 20px 0 0 0;
 }
 
-.pico-sitehead-cta .gh-button + .gh-button {
+.pico-sitehead-cta .gh-button+.gh-button {
     margin-left: 15px;
 }
 
@@ -116,10 +117,12 @@ html,
         flex-direction: column;
         text-align: center;
     }
-    .pico-sitehead > img {
+
+    .pico-sitehead>img {
         width: 100px;
         margin: 0 auto 4vmin;
     }
+
     .pico-sitehead-cta {
         justify-content: center;
     }
@@ -169,7 +172,7 @@ html,
     margin: 1.2rem 0;
 }
 
-.gh-card-content > strong {
+.gh-card-content>strong {
     display: inline-block;
     padding: 1px 0;
     font-weight: 500;
@@ -181,11 +184,13 @@ html,
     .gh-card-link {
         flex-direction: column;
     }
+
     .gh-card-image {
         width: 100%;
         height: auto;
         margin: 0 0 4vw 0;
     }
+
     .gh-card-content {
         font-size: 1.6rem;
     }
@@ -204,7 +209,7 @@ html,
     margin: 4vmin 0 0 0;
 }
 
-.gh-page-head > p {
+.gh-page-head>p {
     max-width: 720px;
     margin: 0.3em auto 0;
     padding: 0 6vmin;
@@ -214,7 +219,7 @@ html,
 }
 
 @media (max-width: 700px) {
-    .gh-page-head > p {
+    .gh-page-head>p {
         font-size: 1.6rem;
     }
 }
@@ -241,7 +246,7 @@ html,
     display: flex;
 }
 
-.pico-pagehead > img {
+.pico-pagehead>img {
     flex-shrink: 0;
     width: 60px;
     margin-right: 20px;
@@ -258,11 +263,11 @@ html,
 
 .pico-pagehead p {
     font-size: 1.4rem !important;
-    color: rgba(0,0,0,0.5);
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .pico-pagehead p strong {
-    color: rgba(0,0,0,0.9);
+    color: rgba(0, 0, 0, 0.9);
 }
 
 .pico-pagehead-cta {
@@ -276,12 +281,15 @@ html,
         margin: 0 auto;
         text-align: center;
     }
+
     .pico-pagehead p {
         margin: 20px 0;
     }
+
     .pico-pagehead-content {
         flex-direction: column;
     }
+
     .pico-pagehead-cta {
         margin: 0.2em 0 0 0;
     }
@@ -329,6 +337,7 @@ html,
 }
 
 @media (max-width: 700px) {
+
     .gh-canvas blockquote,
     .gh-canvas dl,
     .gh-canvas ol,
@@ -370,13 +379,13 @@ html,
     margin: 0 0.75vmin;
 }
 
-.gh-author-links a + a:before {
+.gh-author-links a+a:before {
     display: block;
     content: "";
     margin: 0 1.25vmin 0 0;
     height: 1em;
     width: 1px;
-    background: rgba(0,0,0,0.3);
+    background: rgba(0, 0, 0, 0.3);
     transform: rotate(20deg);
 }
 
@@ -390,13 +399,13 @@ html,
 .gh-button:hover {
     color: #999 !important;
     font-weight: 500;
-    box-shadow: rgba(0,0,0,0.06) 0 1px 1px 0, rgba(0,0,0,0.1) 0 1px 6px 0, rgba(0,0,0,0.05) 0 2px 12px -6px;
+    box-shadow: rgba(0, 0, 0, 0.06) 0 1px 1px 0, rgba(0, 0, 0, 0.1) 0 1px 6px 0, rgba(0, 0, 0, 0.05) 0 2px 12px -6px;
 }
 
 .gh-button.gh-button-primary,
 .gh-button.gh-button-primary:hover {
     color: #fff !important;
-    box-shadow: rgba(0,0,0,0.06) 0 1px 1px 0, rgba(0,0,0,0.1) 0 1px 6px 0, rgba(0,0,0,0.05) 0 2px 12px -6px;
+    box-shadow: rgba(0, 0, 0, 0.06) 0 1px 1px 0, rgba(0, 0, 0, 0.1) 0 1px 6px 0, rgba(0, 0, 0, 0.05) 0 2px 12px -6px;
 }
 
 
@@ -467,6 +476,7 @@ html,
         display: flex;
         flex-direction: column;
     }
+
     .pico-cta .gh-button {
         order: 3;
         float: none;
@@ -491,11 +501,11 @@ html,
     letter-spacing: -0.6px;
 }
 
-.gh-checkout-form > p {
+.gh-checkout-form>p {
     max-width: 500px;
     margin: 0 auto 60px;
     font-size: 1.3em;
-    color: rgba(0,0,0,0.5);
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .gh-checkout-box {
@@ -512,10 +522,10 @@ html,
     text-align: left;
     border-radius: 10px;
     background: #fff;
-    box-shadow: 0 0 0 1px rgba(39,44,49,.03), 0 0 3px rgba(39,44,49,.05), 0 5px 22px -10px rgba(39,44,49,.12), 0 25px 30px -25px rgba(39,44,49,.05);
+    box-shadow: 0 0 0 1px rgba(39, 44, 49, .03), 0 0 3px rgba(39, 44, 49, .05), 0 5px 22px -10px rgba(39, 44, 49, .12), 0 25px 30px -25px rgba(39, 44, 49, .05);
 }
 
-.gh-checkout-plan + .gh-checkout-plan {
+.gh-checkout-plan+.gh-checkout-plan {
     margin-left: 30px;
 }
 
@@ -534,7 +544,7 @@ html,
     bottom: 25px;
     left: 30%;
     right: 30%;
-    background: rgba(39,44,49,.08);
+    background: rgba(39, 44, 49, .08);
     border-radius: 2px;
 }
 
@@ -596,10 +606,12 @@ html,
     .gh-checkout-title {
         margin-top: 50px;
     }
+
     .gh-checkout-box {
         flex-direction: column;
     }
-    .gh-checkout-plan + .gh-checkout-plan {
+
+    .gh-checkout-plan+.gh-checkout-plan {
         margin: 5vmin 0 0 0;
     }
 }
@@ -633,13 +645,13 @@ html,
     line-height: 1.3em;
 }
 
-.pico-field + .pico-field {
+.pico-field+.pico-field {
     margin-top: 3vmin;
 }
 
 .pico-field-value {
     font-size: 1.8rem;
-    color: rgba(0,0,0,0.4);
+    color: rgba(0, 0, 0, 0.4);
 }
 
 
@@ -655,6 +667,7 @@ html,
     color: #afafaf;
     text-decoration: none;
 }
+
 .gh-foot a:hover {
     text-decoration: underline;
 }
@@ -671,7 +684,7 @@ html,
     text-decoration: none;
 }
 
-.gh-foot-meta > strong {
+.gh-foot-meta>strong {
     font-size: 2rem;
     letter-spacing: -0.5px;
 }
@@ -704,12 +717,12 @@ html,
     margin: 0;
 }
 
-.gh-foot-menu .nav li + li {
+.gh-foot-menu .nav li+li {
     padding: 0 0 0 10px;
     margin: 0 0 0 10px;
 }
 
-.gh-foot-menu .nav li + li:before {
+.gh-foot-menu .nav li+li:before {
     content: "";
     display: block;
     position: absolute;
@@ -725,20 +738,25 @@ html,
     .gh-foot {
         text-align: center;
     }
+
     .gh-foot-meta {
         flex-direction: column-reverse;
         margin: 20px 0;
     }
+
     .gh-foot-icons {
         margin: 0 0 20px;
     }
+
     .gh-foot-icons a svg {
         margin: 0 12px;
     }
+
     .gh-foot-menu {
         flex-direction: column;
         margin: 0 0 20px;
     }
+
     .gh-foot-menu .nav {
         margin: 0 0 5px;
     }

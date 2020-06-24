@@ -1,5 +1,5 @@
 {
-    "name": "pico",
+    "name": "pico-headless",
     "description": "A paid members publishing theme for Ghost",
     "demo": "https://pico.ghost.io",
     "version": "1.0.0",
